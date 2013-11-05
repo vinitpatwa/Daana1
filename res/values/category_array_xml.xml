@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    	<string-array name="category_array">
+		<item>Food</item>
+		<item>Environment</item>
+		<item>Crisis Support</item>
+		<item>Education</item>
+		<item>Animal care</item>
+		<item>Children and Youth</item>
+		<item>Human Rights</item>
+		<item>Women</item>
+		<item>Ethnicity</item>
+	</string-array>
+</resources>
+
+
+
+
+
+
+
