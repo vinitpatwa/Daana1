@@ -7,8 +7,8 @@
     <uses-sdk
         android:minSdkVersion="14"
         android:targetSdkVersion="18" />
-    
-      <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
@@ -20,11 +20,6 @@
         <activity
             android:name="com.vinit.daana.EventsActivity"
             android:label="@string/app_name" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name="com.vinit.daana.CreateEventActivity"
@@ -33,6 +28,19 @@
         <activity
             android:name="com.vinit.daana.EventDetailsActivity"
             android:label="@string/title_activity_event_details" >
+        </activity>
+        <activity
+            android:name="com.vinit.daana.MainActivity"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.vinit.daana.ProfileActivity"
+            android:label="@string/title_activity_profile" >
         </activity>
     </application>
 

@@ -6,7 +6,19 @@
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_create_event">CreateEventActivity</string>
     <string name="title_activity_event_details">EventDetailsActivity</string>
-        <string name="tv_create_event_name">Event Name</string>
-            <string name="select">Food</string>
-
+    <string name="tv_create_event_name">Event Name</string>
+    <string name="select">Food</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="username_hint">Email Address</string>
+    <string name="password_hint">Password</string>
+    <string name="btnRegister">I am new here</string>
+    <string name="btnLogin">Login</string>
+    <string name="facebook_desc">ConnectWithFacebook</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="etFirstName">First Name</string>
+    <string name="etLastName">Last Name</string>
+    <string name="etPhoneNumber">Phone Number</string>
+    <string name="etEmailAddress">Email Address</string>
+	<string name="btnJoin">Join</string>
+	
 </resources>
