@@ -17,8 +17,9 @@
     <string name="title_activity_profile">ProfileActivity</string>
     <string name="etFirstName">First Name</string>
     <string name="etLastName">Last Name</string>
-    <string name="etPhoneNumber">Phone Number</string>
+    <string name="etPhoneNumber">Phone Number (optional)</string>
     <string name="etEmailAddress">Email Address</string>
 	<string name="btnJoin">Join</string>
+	<string name="etOrganization">Organization</string>
 	
 </resources>
