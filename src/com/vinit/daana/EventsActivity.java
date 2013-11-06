@@ -1,5 +1,6 @@
 package com.vinit.daana;
 
+import com.vinit.daana.fragment.OrgListFragment;
 import com.vinit.daana.fragment.ParticipatingFragment;
 import com.vinit.daana.fragment.RecentFragment;
 
@@ -20,7 +21,7 @@ import android.widget.Toast;
 
 public class EventsActivity extends FragmentActivity implements ActionBar.TabListener {
 
-	 ActionBar.Tab tabNearMe, tabRecent, tabParticipating;
+	 ActionBar.Tab tabDonors, tabRecent, tabParticipating;
 	 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,11 +39,13 @@ public class EventsActivity extends FragmentActivity implements ActionBar.TabLis
         actionBar.setTitle("Dana Events");
         actionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#880000")));
         
-        tabRecent= actionBar.newTab().setText("Recent").setTag("recent").setTabListener(this);
-        tabParticipating= actionBar.newTab().setText("Participating").setTag("participating").setTabListener(this);
-
+        tabRecent = actionBar.newTab().setText("Home").setTag("recent").setTabListener(this);
+        tabParticipating = actionBar.newTab().setText("Participating").setTag("participating").setTabListener(this);
+        tabDonors = actionBar.newTab().setText("Donors").setTag("donors").setTabListener(this);
+        
         actionBar.addTab(tabRecent);
         actionBar.addTab(tabParticipating);
+        actionBar.addTab(tabDonors);
         actionBar.selectTab(tabRecent);
     }
     
@@ -78,19 +81,20 @@ public class EventsActivity extends FragmentActivity implements ActionBar.TabLis
 
 	@Override
 	public void onTabSelected(ActionBar.Tab tab, android.app.FragmentTransaction ft) {
-		// TODO Auto-generated method stub
 		FragmentManager manager = getSupportFragmentManager();
         android.support.v4.app.FragmentTransaction fts = manager.beginTransaction();
 
         if(tab.getTag() == "recent"){
             //Set to fragment to Timeline
             fts.replace(R.id.fragment_container,new RecentFragment());
-        }else{
+        }else if(tab.getTag() == "participating"){
             //Set to fragment to Mentions Fragment
             fts.replace(R.id.fragment_container,new ParticipatingFragment());
+        } else if(tab.getTag() == "donors"){
+        	fts.replace(R.id.fragment_container,new OrgListFragment());
         }
+        
         fts.commit();
-		
 	}
 
 
