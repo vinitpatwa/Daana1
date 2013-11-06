@@ -42,6 +42,17 @@ public class CreateEventActivity extends Activity implements com.vinit.daana.fra
 
 //	Event two = new Event("Sumit","3/2/2014","Food","Zynga EVent","650 Townsend ST","San Francisco","94107","http://www.unleashthefanboy.com/wp-content/uploads/2013/06/zynga-banner.jpeg");
 //	events.add(one);
+	
+	public void onCreateEvent(View v){
+		
+		//Implenent sending event back to activity
+		Intent i = new Intent();
+	
+		Toast.makeText(this,"Created new event", Toast.LENGTH_SHORT).show();
+		finish();
+		
+	}
+	
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -152,14 +163,6 @@ public class CreateEventActivity extends Activity implements com.vinit.daana.fra
 	}
 
 
-	public void onCreateEvent(View v){
-		
-		//Implenent sending event back to activity
-		Intent i = new Intent();
-	
-		Toast.makeText(this,"Created new event", Toast.LENGTH_SHORT).show();
-		finish();
-		
-	}
+
 
 }
