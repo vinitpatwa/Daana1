@@ -37,7 +37,7 @@ public class EventsActivity extends FragmentActivity implements ActionBar.TabLis
         actionBar.setDisplayShowTitleEnabled(true);
 
         actionBar.setTitle("Dana Events");
-        actionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#880000")));
+//        actionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#880000")));
         
         tabRecent = actionBar.newTab().setText("Home").setTag("recent").setTabListener(this);
         tabParticipating = actionBar.newTab().setText("Participating").setTag("participating").setTabListener(this);
