@@ -66,7 +66,8 @@
         android:layout_marginTop="5dp"
         android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"
-        android:layout_marginBottom="15dp">
+        android:layout_marginBottom="15dp"
+        android:gravity="fill_horizontal|center">
         
         <Button
             android:id="@+id/btnRegister"
@@ -74,19 +75,17 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="15dp"
-            android:background="@drawable/states_nice_button"
-        	android:textColor="#ffffff"
             android:text="@string/btnRegister" />
+            <!-- android:background="@drawable/states_nice_button"
+        	android:textColor="#ffffff" -->
         
         <Button
 	        android:id="@+id/btnLogin"
-	        android:layout_width="wrap_content"
+	        android:layout_width="150dp"
 	        android:layout_height="wrap_content"
 	        android:layout_marginTop="15dp"
-	        android:layout_marginLeft="85dp"
+	        android:layout_marginLeft="10dp"
 	        android:layout_marginRight="5dp"
-	        android:background="@drawable/states_nice_button"
-        	android:textColor="#ffffff"
 	        android:text="@string/btnLogin" />
     </LinearLayout>
 </LinearLayout>
