@@ -74,7 +74,8 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="15dp"
-            android:background="@android:color/darker_gray"
+            android:background="@drawable/states_nice_button"
+        	android:textColor="#ffffff"
             android:text="@string/btnRegister" />
         
         <Button
@@ -84,7 +85,8 @@
 	        android:layout_marginTop="15dp"
 	        android:layout_marginLeft="85dp"
 	        android:layout_marginRight="5dp"
-	        android:background="@android:color/darker_gray"
+	        android:background="@drawable/states_nice_button"
+        	android:textColor="#ffffff"
 	        android:text="@string/btnLogin" />
     </LinearLayout>
 </LinearLayout>

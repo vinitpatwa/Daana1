@@ -26,7 +26,7 @@ public class MainActivity extends Activity {
 		
 		ActionBar actionBar = getActionBar();
         actionBar.setTitle("Welcome to Dana!");
-//        actionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#880000")));
+        //actionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#880000")));
         
 		onSignUp();
 	}
