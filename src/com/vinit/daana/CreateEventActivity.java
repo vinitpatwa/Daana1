@@ -141,7 +141,7 @@ public class CreateEventActivity extends Activity implements com.vinit.daana.fra
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.create_event, menu);
+		getMenuInflater().inflate(R.menu.event_details, menu);
 		return true;
 	}
 

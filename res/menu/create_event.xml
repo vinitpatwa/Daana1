@@ -1,10 +1,12 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
 
-    <item
-        android:id="@+id/create_event"
+
+
+       <item
+        android:id="@+id/event_details"
         android:orderInCategory="100"
         android:showAsAction="always"
-        android:icon="@drawable/ic_create_event"
+        android:icon="@drawable/ic_action_new"
         android:title="Create Event"/>
-
+    
 </menu>

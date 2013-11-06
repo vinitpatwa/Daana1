@@ -60,7 +60,7 @@ public class EventsActivity extends FragmentActivity implements ActionBar.TabLis
     public boolean onOptionsItemSelected(MenuItem item) {
     	// TODO Auto-generated method stub
     	switch (item.getItemId()){
-    	case R.id.create_event:
+    	case R.id.event_details:
     		Toast.makeText(this, "In CreateEvent", Toast.LENGTH_SHORT).show();
         	startActivity(new Intent(this, CreateEventActivity.class));
     		return true;
