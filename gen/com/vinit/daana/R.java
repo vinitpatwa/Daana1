@@ -31,19 +31,21 @@ public final class R {
         public static final int fb_signup=0x7f020004;
         public static final int floral_tree_beautiful=0x7f020005;
         public static final int ic_action_camera=0x7f020006;
-        public static final int ic_action_event=0x7f020007;
-        public static final int ic_action_new=0x7f020008;
-        public static final int ic_action_overflow=0x7f020009;
-        public static final int ic_action_person=0x7f02000a;
-        public static final int ic_action_place=0x7f02000b;
-        public static final int ic_action_refresh=0x7f02000c;
-        public static final int ic_action_remove=0x7f02000d;
-        public static final int ic_calendar=0x7f02000e;
-        public static final int ic_create_event=0x7f02000f;
-        public static final int ic_direction=0x7f020010;
-        public static final int ic_launcher=0x7f020011;
-        public static final int new_user=0x7f020012;
-        public static final int new_user1=0x7f020013;
+        public static final int ic_action_directions=0x7f020007;
+        public static final int ic_action_event=0x7f020008;
+        public static final int ic_action_new=0x7f020009;
+        public static final int ic_action_overflow=0x7f02000a;
+        public static final int ic_action_person=0x7f02000b;
+        public static final int ic_action_place=0x7f02000c;
+        public static final int ic_action_refresh=0x7f02000d;
+        public static final int ic_action_remove=0x7f02000e;
+        public static final int ic_calendar=0x7f02000f;
+        public static final int ic_create_event=0x7f020010;
+        public static final int ic_direction=0x7f020011;
+        public static final int ic_launcher=0x7f020012;
+        public static final int ic_launcher1=0x7f020013;
+        public static final int new_user=0x7f020014;
+        public static final int new_user1=0x7f020015;
     }
     public static final class id {
         public static final int action_settings=0x7f09002f;
@@ -115,6 +117,7 @@ public final class R {
     }
     public static final class string {
         public static final int action_settings=0x7f060001;
+        public static final int activity_main_welcome=0x7f060014;
         public static final int app_name=0x7f060000;
         public static final int btnJoin=0x7f060012;
         public static final int btnLogin=0x7f06000b;
@@ -162,6 +165,8 @@ public final class R {
  All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f070001;
+        public static final int MyActionBar=0x7f070005;
+        public static final int MyTheme=0x7f070004;
         public static final int Theme_HighlightCopy=0x7f070002;
         public static final int Theme_HighlightCopy_ActionBar=0x7f070003;
     }
