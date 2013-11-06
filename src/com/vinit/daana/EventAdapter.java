@@ -48,14 +48,6 @@ public class EventAdapter extends ArrayAdapter<Event> {
 		ImageLoader.getInstance().displayImage(event.getImage(),
 				iv_event_item_image);
 		iv_event_item_image.setTag(event.getName());
-		iv_event_item_image.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				Intent i = new Intent(getContext(), EventDetailsActivity.class);
-				i.putExtra("screenName", v.getTag().toString());
-				getContext().startActivity(i);
-			}
-		});
 		
 		
 		 tv_event_item_name = (TextView) view.findViewById(R.id.tv_event_item_name);

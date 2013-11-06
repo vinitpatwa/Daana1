@@ -1,8 +1,9 @@
 package com.vinit.daana.model;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Event {
+public class Event implements Serializable{
 
 	public Event(String name, String date, String categories,
 			String description, String address, String city, String zipcode,

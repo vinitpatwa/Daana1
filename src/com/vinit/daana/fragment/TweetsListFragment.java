@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
+import com.vinit.daana.EventDetailsActivity;
 import com.vinit.daana.R;
 import com.vinit.daana.EventAdapter;
 import com.vinit.daana.model.Event;
@@ -21,6 +22,8 @@ import com.vinit.daana.model.Event;
  * Created by vpatwa on 10/28/13.
  */
 public class TweetsListFragment extends Fragment {
+	
+	final int requestCode = 1;
 
 	EventAdapter adapter;
 	ListView lv_timeline;
@@ -32,10 +35,28 @@ public class TweetsListFragment extends Fragment {
 		View v = inf.inflate(R.layout.fragment_tweets_list, parent, false);
 		lv_timeline = (ListView) v.findViewById(R.id.lv_timeline);
 		lv_timeline.setAdapter(adapter);
+		
+		lv_timeline.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+			@Override
+			public void onItemClick(AdapterView<?> adapterView, View view, int position,
+					long l) {
+			
+				Event event = (Event) lv_timeline.getItemAtPosition(position);
+				
+				Intent i = new Intent(getActivity(), EventDetailsActivity.class);
+				i.putExtra("event", event);
+				startActivity(i);
+				startActivityForResult(i, requestCode);
+				}
+		});
 
 		return v;
 	}
 
+	
+	
+	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
