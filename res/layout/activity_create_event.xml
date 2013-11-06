@@ -80,6 +80,7 @@
         android:layout_below="@+id/sp_create_event_category"
         android:ems="10"
         android:layout_marginTop="14dp"
+        android:maxLength="180"
         android:hint="Enter Description"
         android:inputType="textMultiLine" >
 

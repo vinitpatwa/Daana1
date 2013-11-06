@@ -1,10 +1,12 @@
 package com.vinit.daana.model;
 
+import java.util.ArrayList;
+
 public class Event {
 
 	public Event(String name, String date, String categories,
 			String description, String address, String city, String zipcode,
-			String image) {
+			String image,ArrayList<User> users, String time) {
 		super();
 		this.name = name;
 		this.date = date;
@@ -14,9 +16,16 @@ public class Event {
 		this.city = city;
 		this.zipcode = zipcode;
 		this.image = image;
+		this.users = users;
+		this.time = time;
+		
+		
 	}
 	public String getName() {
 		return name;
+	}
+	public ArrayList<User> getUsers() {
+		return users;
 	}
 	public String getDate() {
 		return date;
@@ -40,6 +49,9 @@ public class Event {
 		return image;
 	}
 	
+	public String getTime() {
+		return time;
+	}
 //	public void setName(String name) {
 //		this.name = name;
 //	}
@@ -66,6 +78,7 @@ public class Event {
 //	}
 //	
 	String name;
+	String creator;
 	String date;
 	String categories;
 	String description; 
@@ -73,5 +86,7 @@ public class Event {
 	String city;
 	String zipcode;
 	String image;
+	ArrayList<User> users;
+	String time;
 	
 }

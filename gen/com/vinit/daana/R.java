@@ -24,47 +24,80 @@ public final class R {
         public static final int activity_vertical_margin=0x7f050001;
     }
     public static final class drawable {
-        public static final int ic_create_event=0x7f020000;
-        public static final int ic_launcher=0x7f020001;
+        public static final int fb_signup=0x7f020000;
+        public static final int ic_create_event=0x7f020001;
+        public static final int ic_launcher=0x7f020002;
+        public static final int new_user=0x7f020003;
+        public static final int new_user1=0x7f020004;
     }
     public static final class id {
-        public static final int action_settings=0x7f09000f;
+        public static final int action_settings=0x7f09001d;
         public static final int bt_create_event_date=0x7f090002;
         public static final int bt_create_event_submit=0x7f090008;
         public static final int bt_create_event_time=0x7f090001;
-        public static final int create_event=0x7f09000e;
+        public static final int btnFBSignUp=0x7f09000a;
+        public static final int btnJoin=0x7f090015;
+        public static final int btnLogin=0x7f09000e;
+        public static final int btnRegister=0x7f09000d;
+        public static final int create_event=0x7f09001c;
+        public static final int etEmailAddress=0x7f090013;
+        public static final int etFirstName=0x7f090010;
+        public static final int etLastName=0x7f090011;
+        public static final int etNewPassword=0x7f090014;
+        public static final int etPassword=0x7f09000c;
+        public static final int etPhoneNumber=0x7f090012;
+        public static final int etUsername=0x7f09000b;
         public static final int et_create_event_address=0x7f090005;
         public static final int et_create_event_city=0x7f090006;
         public static final int et_create_event_description=0x7f090004;
         public static final int et_create_event_name=0x7f090000;
         public static final int et_create_event_zipcode=0x7f090007;
         public static final int fragment_container=0x7f090009;
-        public static final int iv_tweet_item_user_image=0x7f09000b;
-        public static final int lv_timeline=0x7f09000a;
+        public static final int imgBtnProfilePic=0x7f09000f;
+        public static final int iv_event_item_image=0x7f090016;
+        public static final int lv_timeline=0x7f09001b;
         public static final int sp_create_event_category=0x7f090003;
-        public static final int tv_tweet_item_firstname=0x7f09000c;
-        public static final int tv_tweet_item_tweet=0x7f09000d;
+        public static final int tv_event_item_city=0x7f090019;
+        public static final int tv_event_item_datentime=0x7f09001a;
+        public static final int tv_event_item_description=0x7f090018;
+        public static final int tv_event_item_name=0x7f090017;
     }
     public static final class layout {
         public static final int activity_create_event=0x7f030000;
         public static final int activity_event_details=0x7f030001;
         public static final int activity_events=0x7f030002;
-        public static final int fragment_tweets_list=0x7f030003;
-        public static final int tweet_item=0x7f030004;
+        public static final int activity_main=0x7f030003;
+        public static final int activity_profile=0x7f030004;
+        public static final int event_item=0x7f030005;
+        public static final int fragment_tweets_list=0x7f030006;
     }
     public static final class menu {
         public static final int create_event=0x7f080000;
         public static final int event_details=0x7f080001;
         public static final int events=0x7f080002;
+        public static final int main=0x7f080003;
+        public static final int profile=0x7f080004;
     }
     public static final class string {
         public static final int action_settings=0x7f060001;
         public static final int app_name=0x7f060000;
+        public static final int btnJoin=0x7f060012;
+        public static final int btnLogin=0x7f06000b;
+        public static final int btnRegister=0x7f06000a;
+        public static final int etEmailAddress=0x7f060011;
+        public static final int etFirstName=0x7f06000e;
+        public static final int etLastName=0x7f06000f;
+        public static final int etPhoneNumber=0x7f060010;
+        public static final int facebook_desc=0x7f06000c;
         public static final int hello_world=0x7f060002;
+        public static final int password_hint=0x7f060009;
         public static final int select=0x7f060006;
         public static final int title_activity_create_event=0x7f060003;
         public static final int title_activity_event_details=0x7f060004;
+        public static final int title_activity_main=0x7f060007;
+        public static final int title_activity_profile=0x7f06000d;
         public static final int tv_create_event_name=0x7f060005;
+        public static final int username_hint=0x7f060008;
     }
     public static final class style {
         /** 

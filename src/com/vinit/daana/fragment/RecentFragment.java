@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import android.os.Bundle;
 import com.vinit.daana.model.Event;
+import com.vinit.daana.model.User;
 
 public class RecentFragment extends TweetsListFragment {
 	
@@ -13,18 +14,14 @@ public class RecentFragment extends TweetsListFragment {
         
         
         ArrayList<Event> events = new ArrayList<Event>();
+		ArrayList<User> users=new ArrayList<User>();
         
-		Event one = new Event("Vinit","2/2/2014","Food","My First EVent","574 3rd ST","San Francisco","94107","http://blog.goodapril.com/assets/Food-Banks.jpg");
-		events.add(one);
+		Event two = new Event("Zynga Brest Cancer awareness","3/2/2014","Women","Zynga Event for Brest Cancer awareness need 10 people to help out","650 Townsend ST","San Francisco","94107","http://www.unleashthefanboy.com/wp-content/uploads/2013/06/zynga-banner.jpeg", users, "09:00");
+		events.add(two);
 
-		Event two = new Event("Sumit","3/2/2014","Food","Zynga EVent","650 Townsend ST","San Francisco","94107","http://www.unleashthefanboy.com/wp-content/uploads/2013/06/zynga-banner.jpeg");
-		events.add(one);
-
-		Event three = new Event("Amit","4/2/2014","Food","Co lab EVent","699 8th ST","San Francisco","94107","http://i0.wp.com/allthingsd.com/files/2013/10/logo_high-feature.png");
-		events.add(one);
-
+		Event three = new Event("Asha Holi for education","2/2/2014","Education","Celebrate Holi with Stanford Asha. Festival of colors to raise money for child education "," 450 Serra Mall","Stanford","94305","https://lh4.googleusercontent.com/-ylFo1Ubqxbw/UVTb1Kvpr4I/AAAAAAAAAGo/qDyCuNzulZk/w797-h800-no/HOLI-2013-FLYER-FINAL.jpg", users, "15:00");
 		events.add(three);
-        
+
         
         getAdapter().addAll(events);
 
