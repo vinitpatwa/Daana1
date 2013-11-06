@@ -10,9 +10,17 @@
     tools:context=".MainActivity" >
 
     <!-- android:background="@null" -->
+    
+    
+        <ImageView
+        android:id="@+id/iv_login_slide_images"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_launcher" />
+        
     <ImageButton 
         android:id="@+id/btnFBSignUp"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:src="@drawable/fb_signup" 
@@ -60,13 +68,14 @@
         android:layout_marginBottom="15dp">
         
         <Button
-	        android:id="@+id/btnRegister"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:layout_marginTop="40dp"
-	        android:layout_marginLeft="5dp"
-	        android:background="@android:color/darker_gray"
-	        android:text="@string/btnRegister" />
+            android:id="@+id/btnRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="40dp"
+            android:background="@android:color/darker_gray"
+            android:text="@string/btnRegister" />
+        
         <Button
 	        android:id="@+id/btnLogin"
 	        android:layout_width="wrap_content"

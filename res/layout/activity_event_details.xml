@@ -27,6 +27,14 @@
         android:text="Details"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
+        <View
+		 android:layout_width="match_parent"
+		 android:id="@+id/view1"
+		 android:layout_height="1dp"
+		 android:layout_below="@+id/tv_event_detail_label"
+		 android:layout_marginTop="5dp"
+		 android:background="@android:color/darker_gray" />
+        
     <TextView
         android:id="@+id/tv_event_detail_description"
         android:layout_width="match_parent"
@@ -34,9 +42,18 @@
         android:layout_alignLeft="@+id/tv_event_detail_label"
         android:layout_alignRight="@+id/iv_event_detail_image"
         android:layout_marginTop="5dp"
-        android:layout_below="@+id/tv_event_detail_label"
+        android:layout_below="@+id/view1"
         android:text="Description"
         android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+            <View
+		 android:layout_width="match_parent"
+		 android:layout_height="1dp"
+		 android:id="@+id/view4"
+		  android:layout_below="@+id/tv_event_detail_description"
+		 android:layout_marginTop="5dp"
+
+		 android:background="@android:color/darker_gray" />
 
     <ImageView
         android:id="@+id/iv_event_details_calendar"
@@ -44,7 +61,7 @@
         android:layout_height="wrap_content"
 		android:layout_marginTop="15dp"
         android:layout_alignLeft="@+id/tv_event_detail_description"
-        android:layout_below="@+id/tv_event_detail_description"
+        android:layout_below="@+id/view4"
         android:src="@drawable/ic_calendar" />
 
     <TextView
@@ -65,14 +82,23 @@
         android:layout_marginTop="5dp"
         android:text="time"
         android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <View
+		 android:layout_width="match_parent"
+		 android:layout_height="1dp"
+		  android:id="@+id/view2"
+		 		 android:layout_below="@+id/tv_event_detail_time"
+		 android:layout_marginTop="5dp"
 
+		 android:background="@android:color/darker_gray" />
+    
     <ImageView
         android:id="@+id/iv_event_details_direction"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
   		android:layout_marginTop="15dp"
         android:layout_alignLeft="@+id/iv_event_details_calendar"
-        android:layout_below="@+id/tv_event_detail_time"
+        android:layout_below="@+id/view2"
         android:src="@drawable/ic_direction" />
     
         <TextView
@@ -94,12 +120,21 @@
         android:text="city"
         android:textAppearance="?android:attr/textAppearanceMedium" />
     
+        <View
+		 android:layout_width="match_parent"
+		 android:layout_height="1dp"
+		 android:id="@+id/view3"
+		  android:layout_below="@+id/tv_event_detail_city"
+		 android:layout_marginTop="5dp"
+
+		 android:background="@android:color/darker_gray" />
+    
         <Button
             android:id="@+id/bt_event_detail_submit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/iv_event_details_direction"
-            android:layout_below="@+id/tv_event_detail_city"
+            android:layout_below="@+id/view3"
             android:layout_marginTop="15dp"
             android:onClick="onAttendEvent"
             android:text="Attend Event" />
