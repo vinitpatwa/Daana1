@@ -2,16 +2,10 @@ package com.vinit.daana;
 
 import java.util.Calendar;
 
-import com.vinit.daana.fragment.DateDialogFragment;
-import com.vinit.daana.fragment.TimePickerFragment;
-import com.vinit.daana.model.Event;
-
 import android.app.Activity;
-import android.os.Bundle;
-//import android.support.v4.app.FragmentTransaction;
 import android.app.FragmentTransaction;
-import android.app.DialogFragment;
-import android.text.format.Time;
+import android.content.Intent;
+import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
@@ -23,6 +17,10 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.vinit.daana.fragment.DateDialogFragment;
+import com.vinit.daana.fragment.TimePickerFragment;
+//import android.support.v4.app.FragmentTransaction;
 
 public class CreateEventActivity extends Activity implements com.vinit.daana.fragment.TimePickerFragment.TimePickedListener {
 
@@ -156,8 +154,11 @@ public class CreateEventActivity extends Activity implements com.vinit.daana.fra
 
 	public void onCreateEvent(View v){
 		
-		
-		
+		//Implenent sending event back to activity
+		Intent i = new Intent();
+	
+		Toast.makeText(this,"Created new event", Toast.LENGTH_SHORT).show();
+		finish();
 		
 	}
 
