@@ -9,28 +9,29 @@
     android:orientation="vertical"
     tools:context=".MainActivity" >
 
-    <!-- android:background="@null" -->
-    
-    
-        <ImageView
+    <ImageView
         android:id="@+id/iv_login_slide_images"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
         android:src="@drawable/ic_launcher" />
         
     <ImageButton 
         android:id="@+id/btnFBSignUp"
-        android:layout_width="match_parent"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:src="@drawable/fb_signup" 
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/facebook_connect" 
         android:background="@null"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"
         android:contentDescription="@string/facebook_desc"/>
 
     <View
 		 android:layout_width="match_parent"
 		 android:layout_height="1dp"
-		 android:layout_marginTop="15dp"
+		 android:layout_marginTop="20dp"
 		 android:layout_marginBottom="10dp"
 		 android:background="@android:color/darker_gray" />
 
@@ -72,7 +73,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="15dp"
             android:background="@android:color/darker_gray"
             android:text="@string/btnRegister" />
         
@@ -80,7 +81,7 @@
 	        android:id="@+id/btnLogin"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
-	        android:layout_marginTop="40dp"
+	        android:layout_marginTop="15dp"
 	        android:layout_marginLeft="85dp"
 	        android:layout_marginRight="5dp"
 	        android:background="@android:color/darker_gray"

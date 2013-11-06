@@ -1,7 +1,10 @@
 package com.vinit.daana;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
@@ -21,6 +24,10 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		
+		ActionBar actionBar = getActionBar();
+        actionBar.setTitle("Welcome to Dana!");
+        actionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#880000")));
+        
 		onSignUp();
 	}
 

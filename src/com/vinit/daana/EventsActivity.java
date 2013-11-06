@@ -27,23 +27,25 @@ public class EventsActivity extends FragmentActivity implements ActionBar.TabLis
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_events);
 
-        ActionBar actionBar = getActionBar();
+        setUpActionBar();
+    }
+
+    public void setUpActionBar(){
+    	ActionBar actionBar = getActionBar();
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
         actionBar.setDisplayShowTitleEnabled(true);
 
-        actionBar.setTitle("Daana Events");
+        actionBar.setTitle("Dana Events");
         actionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#880000")));
+        
         tabRecent= actionBar.newTab().setText("Recent").setTag("recent").setTabListener(this);
         tabParticipating= actionBar.newTab().setText("Participating").setTag("participating").setTabListener(this);
 
         actionBar.addTab(tabRecent);
         actionBar.addTab(tabParticipating);
         actionBar.selectTab(tabRecent);
-        
-        
     }
-
-
+    
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
