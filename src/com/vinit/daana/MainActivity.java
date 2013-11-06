@@ -25,8 +25,8 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 		
 		ActionBar actionBar = getActionBar();
-        actionBar.setTitle("Welcome to Dana!!");
-        actionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#880000")));
+        actionBar.setTitle("Welcome to Dana!");
+//        actionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#880000")));
         
 		onSignUp();
 	}
