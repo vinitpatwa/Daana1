@@ -94,12 +94,11 @@
 	        android:hint="@string/password_hint" />
         <Button
 	        android:id="@+id/btnJoin"
-	        android:layout_width="250dp"
-	        android:layout_height="30dp"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
 	        android:layout_marginTop="25dp"
 	        android:layout_marginLeft="25dp"
 	        android:layout_marginRight="20dp"
-	        android:background="@android:color/darker_gray"
 	        android:text="@string/btnJoin" />
     </LinearLayout>    
 </RelativeLayout>
