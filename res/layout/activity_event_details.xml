@@ -101,33 +101,24 @@
         android:layout_below="@+id/view2"
         android:src="@drawable/ic_direction" />
     
-        <TextView
-        android:id="@+id/tv_event_detail_address"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/iv_event_details_direction"
-        android:layout_toRightOf="@+id/iv_event_details_direction"
-        android:text="Address"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-    <TextView
-        android:id="@+id/tv_event_detail_city"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tv_event_detail_address"
-        android:layout_alignLeft="@+id/tv_event_detail_address"
-        android:layout_marginTop="5dp"
-        android:text="city"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        <Button
+            android:id="@+id/bt_event_detail_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_event_details_direction"
+            android:layout_toRightOf="@+id/iv_event_details_direction"
+            android:background="@android:color/transparent"
+    		android:gravity="left|center_vertical"
+    		android:onClick="onAddressClick"
+            android:text="Address" />
     
         <View
-		 android:layout_width="match_parent"
-		 android:layout_height="1dp"
-		 android:id="@+id/view3"
-		  android:layout_below="@+id/tv_event_detail_city"
-		 android:layout_marginTop="5dp"
-
-		 android:background="@android:color/darker_gray" />
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/bt_event_detail_address"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/darker_gray" />
     
         <Button
             android:id="@+id/bt_event_detail_submit"
@@ -138,5 +129,6 @@
             android:layout_marginTop="15dp"
             android:onClick="onAttendEvent"
             android:text="Attend Event" />
+
 
 </RelativeLayout>

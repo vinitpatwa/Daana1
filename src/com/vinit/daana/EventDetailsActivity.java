@@ -3,6 +3,7 @@ package com.vinit.daana;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.vinit.daana.model.Event;
 
+import android.net.Uri;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
@@ -10,6 +11,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.TextureView;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -20,8 +22,10 @@ public class EventDetailsActivity extends Activity {
 	TextView tv_event_detail_description;
 	TextView tv_event_detail_date;
 	TextView tv_event_detail_time;
-	TextView tv_event_detail_address;
-	TextView tv_event_detail_city;
+	Button bt_event_detail_address;
+	
+//	TextView tv_event_detail_address;
+//	TextView tv_event_detail_city;
 
 	
 	
@@ -50,11 +54,11 @@ public class EventDetailsActivity extends Activity {
     	 tv_event_detail_time = (TextView) findViewById(R.id.tv_event_detail_time);
     	 tv_event_detail_time.setText(event.getTime());
     	 
-    	 tv_event_detail_address = (TextView) findViewById(R.id.tv_event_detail_address);
-    	 tv_event_detail_address.setText(event.getAddress());
+    	 bt_event_detail_address = (Button) findViewById(R.id.bt_event_detail_address);
+    	 bt_event_detail_address.setText(event.getAddress()+"\n"+event.getCity()+" , "+event.getZipcode());
     	 
-    	 tv_event_detail_city = (TextView) findViewById(R.id.tv_event_detail_city);
-    	 tv_event_detail_city.setText(event.getCity()+" , "+event.getZipcode());
+//    	 tv_event_detail_city = (TextView) findViewById(R.id.tv_event_detail_city);
+//    	 tv_event_detail_city.setText(event.getCity()+" , "+event.getZipcode());
 	     
 	}
 
@@ -74,6 +78,14 @@ public class EventDetailsActivity extends Activity {
 		Toast.makeText(this,"Created new event", Toast.LENGTH_SHORT).show();
 		finish();
 		
+	}
+	
+	public void onAddressClick(View v){
+		
+		String address = bt_event_detail_address.getText().toString();
+		Intent intent = new Intent(android.content.Intent.ACTION_VIEW,
+			    Uri.parse("google.navigation:q="+address));
+		startActivity(intent);
 	}
 
 }
