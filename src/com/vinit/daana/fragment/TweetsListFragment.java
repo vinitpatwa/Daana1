@@ -46,7 +46,6 @@ public class TweetsListFragment extends Fragment {
 				
 				Intent i = new Intent(getActivity(), EventDetailsActivity.class);
 				i.putExtra("event", event);
-				startActivity(i);
 				startActivityForResult(i, requestCode);
 				}
 		});
