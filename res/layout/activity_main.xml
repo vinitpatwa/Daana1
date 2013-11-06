@@ -13,7 +13,7 @@
         android:id="@+id/iv_login_slide_images"
         android:layout_width="fill_parent"
         android:layout_height="150dp"
-        android:src="@drawable/ic_launcher" />
+        android:src="@drawable/floral_tree_beautiful" />
         
     <ImageButton 
         android:id="@+id/btnFBSignUp"
