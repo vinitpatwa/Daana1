@@ -3,6 +3,7 @@ package com.vinit.daana;
 import com.vinit.daana.fragment.OrgListFragment;
 import com.vinit.daana.fragment.ParticipatingFragment;
 import com.vinit.daana.fragment.RecentFragment;
+import com.vinit.daana.model.Event;
 
 import android.os.Bundle;
 import android.app.ActionBar;
@@ -15,6 +16,7 @@ import android.graphics.drawable.ColorDrawable;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
@@ -22,6 +24,7 @@ import android.widget.Toast;
 public class EventsActivity extends FragmentActivity implements ActionBar.TabListener {
 
 	 ActionBar.Tab tabDonors, tabRecent, tabParticipating;
+	 int REQUEST_CODE = 1;
 	 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,7 +65,7 @@ public class EventsActivity extends FragmentActivity implements ActionBar.TabLis
     	switch (item.getItemId()){
     	case R.id.event_details:
     		Toast.makeText(this, "In CreateEvent", Toast.LENGTH_SHORT).show();
-        	startActivity(new Intent(this, CreateEventActivity.class));
+        	startActivityForResult(new Intent(this, CreateEventActivity.class),REQUEST_CODE);
     		return true;
     	
     	default:
@@ -71,6 +74,24 @@ public class EventsActivity extends FragmentActivity implements ActionBar.TabLis
     	}
     }
 
+    protected void onActivityResult(int requestCode, int resultCode, Intent intent) {
+    	 Log.d("DEBUG4","In ActivityResult");
+
+        if (requestCode == REQUEST_CODE)
+        {
+        	 Log.d("DEBUG4","In ActivityResult REQUESTCODE");
+
+            if (resultCode == RESULT_OK)
+            {
+            	 Log.d("DEBUG4","In ActivityResult RESULT_OK");
+
+                Event e = (Event) intent.getSerializableExtra("event");
+                Log.d("DEBUG4",e.getName().toString());
+                // Do whatever with the updated object
+            }
+        }
+    }
+    
 
 	@Override
 	public void onTabReselected(Tab tab, android.app.FragmentTransaction ft) {

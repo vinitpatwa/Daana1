@@ -1,5 +1,6 @@
 package com.vinit.daana;
 
+import java.util.ArrayList;
 import java.util.Calendar;
 
 import android.app.Activity;
@@ -21,6 +22,8 @@ import android.widget.Toast;
 import com.vinit.daana.fragment.DateDialogFragment;
 import com.vinit.daana.fragment.TimePickerFragment;
 //import android.support.v4.app.FragmentTransaction;
+import com.vinit.daana.model.Event;
+import com.vinit.daana.model.User;
 
 public class CreateEventActivity extends Activity implements com.vinit.daana.fragment.TimePickerFragment.TimePickedListener {
 
@@ -41,15 +44,32 @@ public class CreateEventActivity extends Activity implements com.vinit.daana.fra
 	String[] category;
 
 //	Event two = new Event("Sumit","3/2/2014","Food","Zynga EVent","650 Townsend ST","San Francisco","94107","http://www.unleashthefanboy.com/wp-content/uploads/2013/06/zynga-banner.jpeg");
+//	Event one = new Event("SF FoodBank Help Homeless","2/2/2014","Food","My First EVent happening in SF for helping 20 homeless people","574 3rd ST","San Francisco","94107","http://blog.goodapril.com/assets/Food-Banks.jpg", users,"10:00");
 //	events.add(one);
 	
 	public void onCreateEvent(View v){
 		
 		//Implenent sending event back to activity
+		
+		ArrayList<User> users=new ArrayList<User>();
+		String one = et_create_event_name.getText().toString();
+		
+		String two =  bt_create_event_date.getText().toString();
+		String three = sp_create_event_category.getSelectedItem().toString();
+		
+		String four = et_create_event_description.getText().toString();
+		String five= et_create_event_address.getText().toString();
+		String six = et_create_event_city.getText().toString();
+		String seven = et_create_event_zipcode.getText().toString();
+		//"http://www.habitatgsf.org/image/email-images/e-news/volunteerchoice.jpg",users,
+		String eight = bt_create_event_time.getText().toString();
+		
+		Event e = new Event(et_create_event_name.getText().toString(), bt_create_event_date.getText().toString(), sp_create_event_category.getSelectedItem().toString(), et_create_event_description.getText().toString(),et_create_event_address.getText().toString(),et_create_event_city.getText().toString(),et_create_event_zipcode.getText().toString(),"http://www.habitatgsf.org/image/email-images/e-news/volunteerchoice.jpg",users,bt_create_event_time.getText().toString());
 		Intent i = new Intent();
-	
+		i.putExtra("event",e);
+		setResult(RESULT_OK, i);
+	    finish();
 		Toast.makeText(this,"Created new event", Toast.LENGTH_SHORT).show();
-		finish();
 		
 	}
 	
@@ -59,7 +79,11 @@ public class CreateEventActivity extends Activity implements com.vinit.daana.fra
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_create_event);
 
-
+		et_create_event_description = (EditText) findViewById(R.id.et_create_event_description);
+		et_create_event_address = (EditText) findViewById(R.id.et_create_event_address);
+		et_create_event_city = (EditText) findViewById(R.id.et_create_event_city);
+		et_create_event_zipcode = (EditText) findViewById(R.id.et_create_event_zipcode);
+		
 		bt_create_event_date = (Button) findViewById(R.id.bt_create_event_date);
 		bt_create_event_time = (Button) findViewById(R.id.bt_create_event_time);
 		sp_create_event_category = (Spinner) findViewById(R.id.sp_create_event_category);
