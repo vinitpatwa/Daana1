@@ -54,25 +54,25 @@ public class OrgListFragment extends Fragment {
 		
 		ArrayList<OrgResults> results = new ArrayList<OrgResults>();
 		
-		OrgResults twitter = new OrgResults("http://www.prconversations.com/wp-content/uploads/2011/08/twitter_icon4.jpg","10");
+		OrgResults twitter = new OrgResults("http://netdna.webdesignerdepot.com/uploads/2013/02/featured35@wdd2x.jpg","10");
 		results.add(twitter);
 
 		OrgResults zynga = new OrgResults("http://www.unleashthefanboy.com/wp-content/uploads/2013/06/zynga-banner.jpeg", "09");
 		results.add(zynga);
 
-		OrgResults facebook = new OrgResults("http://cdn2.insidermonkey.com/blog/wp-content/uploads/2012/12/facebook-e1355337496430.jpg", "15");
+		OrgResults facebook = new OrgResults("http://cdni.wired.co.uk/1920x1280/d_f/facebook_2.jpg", "15");
 		results.add(facebook); 
 		
-		OrgResults msft = new OrgResults("http://pixabay.com/static/uploads/photo/2013/02/12/09/07/microsoft-80660_640.png?i", "29");
+		OrgResults msft = new OrgResults("http://colibriumpartners.com/wp-content/uploads/2013/05/img_clients_microsoft-logo.jpg", "29");
 		results.add(msft);
 		
-		OrgResults google = new OrgResults("https://lh3.ggpht.com/7O3H3V0fEBumwJlqDLD03t1fmwl8fH9YoBsPwB2UQ_aiBilM7OAOe2gkFB3wrojJqbM=w300-rw", "22");
+		OrgResults google = new OrgResults("http://blog.heartland.org/wp-content/uploads/2013/07/Google.jpg", "22");
 		results.add(google);
 		
-		OrgResults amazon = new OrgResults("http://sarahsfav.es/wp-content/uploads/2013/07/amzn_fb-tw_Icon-global.png", "14");
+		OrgResults amazon = new OrgResults("http://shopaholicsavers.com/wp-content/uploads/2013/04/amazonlogo.jpg", "14");
 		results.add(amazon);
 		
-		OrgResults apple = new OrgResults("http://static.giantbomb.com/uploads/scale_small/0/316/520157-apple_logo_dec07.jpg", "21");
+		OrgResults apple = new OrgResults("http://fansided.com/wp-content/blogs.dir/229/files/2013/06/apple.jpg", "21");
 		results.add(apple);
 		
 		adapter.addAll(results);
