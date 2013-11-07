@@ -26,6 +26,9 @@ public class EventsActivity extends FragmentActivity implements ActionBar.TabLis
 	 ActionBar.Tab tabDonors, tabRecent, tabParticipating;
 	 int REQUEST_CODE = 1;
 	 
+	public static RecentFragment rfragment;
+	 ParticipatingFragment pfragment;
+	 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -87,6 +90,21 @@ public class EventsActivity extends FragmentActivity implements ActionBar.TabLis
 
                 Event e = (Event) intent.getSerializableExtra("event");
                 Log.d("DEBUG4",e.getName().toString());
+                FragmentManager fragmentManager = this.getSupportFragmentManager();
+                RecentFragment rcft = (RecentFragment) fragmentManager.findFragmentByTag("recent");
+                ParticipatingFragment pft = (ParticipatingFragment) fragmentManager.findFragmentByTag("participating");
+
+                if(rcft == null){
+                	Log.d("DEBUG4", "Recent is null");
+                }else{
+                	Log.d("DEBUG4", "Yay recent is NOT null!!!!!");
+//                	Event e = (Event) intent.getSerializableExtra("event");
+
+//                	rcft.getAdapter().insert(e,0);
+                	EventsActivity.rfragment.getAdapter().insert(e,0);
+//                	pft.getAdapter().insert(e, 0);
+                }
+                
                 // Do whatever with the updated object
             }
         }
@@ -107,18 +125,36 @@ public class EventsActivity extends FragmentActivity implements ActionBar.TabLis
 
         if(tab.getTag() == "recent"){
             //Set to fragment to Timeline
-            fts.replace(R.id.fragment_container,new RecentFragment());
+            fts.replace(R.id.fragment_container, getRecentFragment(),"recent");
         }else if(tab.getTag() == "participating"){
             //Set to fragment to Mentions Fragment
-            fts.replace(R.id.fragment_container,new ParticipatingFragment());
+            fts.replace(R.id.fragment_container,getParticipatingFragment(), "participating");
         } else if(tab.getTag() == "donors"){
-        	fts.replace(R.id.fragment_container,new OrgListFragment());
+        	fts.replace(R.id.fragment_container,new OrgListFragment(),"donor");
         }
         
         fts.commit();
 	}
 
+	public RecentFragment getRecentFragment(){
+		if(EventsActivity.rfragment == null){
+			EventsActivity.rfragment = new RecentFragment();
+			Log.d("DEBUG4", "creating REcent Fragment");
+		}else{
+			Log.d("DEBUG4", "NOT NOT creating REcent Fragment");
+		}
+		return rfragment;
+	}
 
+	public ParticipatingFragment getParticipatingFragment(){
+		if(pfragment == null){
+			pfragment = new ParticipatingFragment();
+			Log.d("DEBUG4", "creating participating Fragment");
+		}
+		return pfragment;
+	}
+
+	
 	@Override
 	public void onTabUnselected(Tab tab, android.app.FragmentTransaction ft) {
 		// TODO Auto-generated method stub
