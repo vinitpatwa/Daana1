@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.vinit.daana"
+    package="com.prototype.dana"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -15,26 +15,26 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
 
     <application
-        android:name="com.vinit.daana.RestClientApp"
+        android:name="com.prototype.dana.RestClientApp"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@android:style/Theme.Holo.Light" >
         <activity
-            android:name="com.vinit.daana.EventsActivity"
+            android:name="com.prototype.dana.EventsActivity"
             android:label="@string/app_name">
             <!-- android:theme="@style/Theme.HighlightCopy"--> 
         </activity>
         <activity
-            android:name="com.vinit.daana.CreateEventActivity"
+            android:name="com.prototype.daaa.CreateEventActivity"
             android:label="@string/title_activity_create_event" >
         </activity>
         <activity
-            android:name="com.vinit.daana.EventDetailsActivity"
+            android:name="com.prototype.dana.EventDetailsActivity"
             android:label="@string/title_activity_event_details" >
         </activity>
         <activity
-            android:name="com.vinit.daana.MainActivity"
+            android:name="com.prototype.dana.MainActivity"
             android:label="@string/title_activity_main" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -42,7 +42,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.vinit.daana.ProfileActivity"
+            android:name="com.prototype.dana.ProfileActivity"
             android:label="@string/title_activity_profile" >
         </activity>
     </application>

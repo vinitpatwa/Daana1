@@ -1,4 +1,4 @@
-package com.vinit.daana;
+package com.prototype.dana;
 
 import android.app.Activity;
 import android.content.Intent;

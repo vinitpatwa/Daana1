@@ -1,9 +1,9 @@
-package com.vinit.daana.fragment;
+package com.prototype.dana.fragment;
 
 //import android.support.v4.app.DialogFragment;
 import android.app.DialogFragment;
 import java.util.Calendar;
-import com.vinit.daana.CreateEventActivity.DateDialogFragmentListener;
+import com.prototype.dana.CreateEventActivity.DateDialogFragmentListener;
 import android.app.DatePickerDialog;
 import android.app.Dialog;
 import android.content.Context;

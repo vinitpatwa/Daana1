@@ -1,9 +1,9 @@
-package com.vinit.daana;
+package com.prototype.dana;
 
-import com.vinit.daana.fragment.OrgListFragment;
-import com.vinit.daana.fragment.ParticipatingFragment;
-import com.vinit.daana.fragment.RecentFragment;
-import com.vinit.daana.model.Event;
+import com.prototype.dana.fragment.OrgListFragment;
+import com.prototype.dana.fragment.ParticipatingFragment;
+import com.prototype.dana.fragment.RecentFragment;
+import com.prototype.dana.model.Event;
 
 import android.os.Bundle;
 import android.app.ActionBar;

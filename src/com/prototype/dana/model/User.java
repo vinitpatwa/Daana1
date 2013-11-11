@@ -1,4 +1,4 @@
-package com.vinit.daana.model;
+package com.prototype.dana.model;
 
 public class User {
 	

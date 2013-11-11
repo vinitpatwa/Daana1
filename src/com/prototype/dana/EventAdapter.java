@@ -1,9 +1,9 @@
-package com.vinit.daana;
+package com.prototype.dana;
 
 import java.util.ArrayList;
 
 import com.nostra13.universalimageloader.core.ImageLoader;
-import com.vinit.daana.model.Event;
+import com.prototype.dana.model.Event;
 
 import android.content.Context;
 import android.content.Intent;

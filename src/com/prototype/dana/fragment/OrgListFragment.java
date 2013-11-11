@@ -1,4 +1,4 @@
-package com.vinit.daana.fragment;
+package com.prototype.dana.fragment;
 
 import java.util.ArrayList;
 
@@ -12,11 +12,11 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.GridView;
 
-import com.vinit.daana.EventDetailsActivity;
-import com.vinit.daana.OrgResultArrayAdapter;
-import com.vinit.daana.R;
-import com.vinit.daana.model.Event;
-import com.vinit.daana.model.OrgResults;
+import com.prototype.dana.EventDetailsActivity;
+import com.prototype.dana.OrgResultArrayAdapter;
+import com.prototype.dana.R;
+import com.prototype.dana.model.Event;
+import com.prototype.dana.model.OrgResults;
 
 public class OrgListFragment extends Fragment {
 

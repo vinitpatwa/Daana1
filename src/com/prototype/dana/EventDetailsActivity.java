@@ -1,7 +1,7 @@
-package com.vinit.daana;
+package com.prototype.dana;
 
 import com.nostra13.universalimageloader.core.ImageLoader;
-import com.vinit.daana.model.Event;
+import com.prototype.dana.model.Event;
 
 import android.net.Uri;
 import android.os.Bundle;

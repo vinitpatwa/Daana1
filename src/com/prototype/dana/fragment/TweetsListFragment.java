@@ -1,4 +1,4 @@
-package com.vinit.daana.fragment;
+package com.prototype.dana.fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,10 +13,10 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-import com.vinit.daana.EventDetailsActivity;
-import com.vinit.daana.R;
-import com.vinit.daana.EventAdapter;
-import com.vinit.daana.model.Event;
+import com.prototype.dana.EventDetailsActivity;
+import com.prototype.dana.R;
+import com.prototype.dana.EventAdapter;
+import com.prototype.dana.model.Event;
 
 /**
  * Created by vpatwa on 10/28/13.

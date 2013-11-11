@@ -1,10 +1,10 @@
-package com.vinit.daana.fragment;
+package com.prototype.dana.fragment;
 
 import java.util.ArrayList;
 
 import android.os.Bundle;
-import com.vinit.daana.model.Event;
-import com.vinit.daana.model.User;
+import com.prototype.dana.model.Event;
+import com.prototype.dana.model.User;
 
 public class RecentFragment extends TweetsListFragment {
 	

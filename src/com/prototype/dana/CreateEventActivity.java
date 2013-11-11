@@ -1,4 +1,4 @@
-package com.vinit.daana;
+package com.prototype.dana;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -19,13 +19,12 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.vinit.daana.fragment.DateDialogFragment;
-import com.vinit.daana.fragment.TimePickerFragment;
-//import android.support.v4.app.FragmentTransaction;
-import com.vinit.daana.model.Event;
-import com.vinit.daana.model.User;
+import com.prototype.dana.fragment.DateDialogFragment;
+import com.prototype.dana.fragment.TimePickerFragment;
+import com.prototype.dana.model.Event;
+import com.prototype.dana.model.User;
 
-public class CreateEventActivity extends Activity implements com.vinit.daana.fragment.TimePickerFragment.TimePickedListener {
+public class CreateEventActivity extends Activity implements com.prototype.dana.fragment.TimePickerFragment.TimePickedListener {
 
 	EditText et_create_event_name;
 	TextView tv_create_event_date;
